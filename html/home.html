@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Home, Blog, Research, CV, Contact">
+	<meta name="author" content="Bibek Pradhan">
+	<meta name="description" content="Portfolio">
+	<meta http-equiv="refresh" content="30">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+
+		#box h3{
+			text-align: center;
+			font-size: 25px;
+			margin-top: 5px;
+		}
+
+		#boxes{
+			margin-top: 20px;
+		}
+
+		#boxes .box{
+			float: left;
+			text-align: center;
+			width: 23%;
+			padding: 10px;
+		}
+
+		.box a{
+			text-decoration: none;
+		}
+		/*when the pointer in class box of <a> tage change color green*/
+		.box a:hover{
+			color:green;
+		}
+
+		.slider-wrapper {
+			font-size: 40px;
+			color:#fff;
+			font-weight: bold;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: 2px;
+
+		}
+		.slider{
+			height: 50px;
+			padding-left:15px;
+			overflow: hidden;
+		}
+		.slider div {
+			color:#fff;
+			height: 50px;
+			margin-bottom: 50px;
+			padding: 2px 15px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		/*for slider*/
+		.slider-text1 {
+			background: lightgreen;
+			animation: slide 5s linear infinite;
+		}
+		.slider-text2 {
+			background: pink;
+		}
+		.slider-text3 {
+			background: purple;
+		}
+		
+		@keyframes slide {
+			0% {margin-top:-300px;}
+			5% {margin-top:-200px;}
+			33% {margin-top:-200px;}
+			38% {margin-top:-100px;}
+			66% {margin-top:-100px;}
+			71% {margin-top:0px;}
+			100% {margin-top:0px;}
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="heading">
+				<img src="../images/img1.jpg" width="100px" height="100px">
+				<h1>Bibek Pradhan<br>Bsc.Computing Student</h1>
+			</div>
+			<!-- navgiation bar -->
+			<nav>
+				<ul>
+					<li><a class="active" href="home.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="resume.html">CV</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="bibek">
+		<div class="container">
+			<!-- welcome message -->
+			<h1><span class="colorchange">Hello World!!</span> Wel-Come to my Portfolio </h1>
+			<p>This is me Bibek Pradhan. I am a student of Bsc.Computing.</p>
+		</div>
+
+		
+		<div class="slider-wrapper">
+			I am learning
+			<div class="slider">
+				<div class="slider-text1">HTML&CSS</div>
+				<div class="slider-text2">Java Script</div>
+				<div class="slider-text3">Java</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<!-- about html -->
+				<img src="../images/html.png" width="90px" height="100px">
+				<h3>HTML5 Markup</h3>
+				<p>HTML5 is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it. <a href="https://en.wikipedia.org/wiki/HTML5">Readmore...</a> </p>	
+			</div>
+			<div class="box">
+				<!-- about css -->
+				<img src="../images/css.png" width="90px" height="100px">
+				<h3>CSS Styling</h3>
+				<p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Readmore...</a></p>	
+			</div>
+			<div class="box">
+				<!-- about JavaScript -->
+				<img src="../images/js.png" width="90px" height="100px">
+				<h3>Java Script</h3>
+				<p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Readmore...</a></p>	
+			</div>
+			<div class="box">
+				<!-- about web design -->
+				<img src="../images/web.jfif" width="90px" height="100px">
+				<h3>Web Design</h3>
+				<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. <a href="https://en.wikipedia.org/wiki/Web_design">Readmore...</a> </p>	
+			</div>
+		</div>	
+	</section>
+</body>
+<!--  footer section start  -->
+<footer>
+	<p>Copyright &copy; 2020 |All-Right Reserved| Design by Bibek Pradhan</p>
+	<div class="social">
+		<a href="https://www.facebook.com/profile.php?id=100007595446109"><img src="../images/fb.png" width="35px" height="35px"></a>
+		<a href="https://www.instagram.com/thebibekpradhan10/"><img src="../images/insta.png" width="35px" height="35px"></a>
+		<a href="https://twitter.com/BibekPr90229443"><img src="../images/twitter.jpg" width="35px" height="35px"></a>
+		<a href="https://web.whatsapp.com/"><img src="../images/whatsapp.jpg" width="35px" height="35px"></a>
+	</div>
+</footer>
+<!--  footer section end -->
+</html>

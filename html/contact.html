@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CONTACT</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/myScript.js"></script>
+  <meta name="keywords" content="HTML, CSS, JavaScript, Home, Blog, Research, CV, Contact">
+  <meta name="author" content="Bibek Pradhan">
+  <meta name="description" content="Portfolio">
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .form{
+      text-align: center;
+      margin-top: 60px;
+      color: #fff;
+    }
+
+    .box{
+      text-align: center;
+    }
+
+    .form h1{
+      font-size: 32px;
+      line-height: 10px;
+    }
+
+    form{
+      margin-top: 50px;
+    }
+
+    .form-control{
+      width: 600px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    input{
+      height: 45px;
+    }
+
+    form .submit{
+      background-color: orange;
+      border-color: transparent;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 2px;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    form .submit:hover{
+      background-color: #f44336;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="background: url(../images/contactimg.jpg); background-size: cover;">
+  <header>
+    <div class="container">
+      <div id="heading">
+        <img src="../images/img1.jpg" width="100px" height="100px">
+        <h1>Bibek Pradhan<br>Bsc.Computing Student</h1>
+      </div>
+      <nav>
+       <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html">CV</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a class="active"  href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="form">
+  <h1>CONTACT ME</h1>
+</div>
+<!-- making form having function validateForm() -->
+<div class="box">
+  <form onsubmit="validateForm()" name="messageForm">
+    <input type="text" name="name" class="form-control" placeholder="Enter Your Full Name"><br>
+    <input type="text" name="address" class="form-control" placeholder="Enter Your Address"><br>
+    <input type="text" name="phone" class="form-control" placeholder="Enter Your Phone Number"><br>
+    <input type="text" name="email" class="form-control" placeholder="Enter Your E-mail"><br>
+    <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+    <input type="submit" name="" class="form-control submit" value="Send Message">
+  </form>
+</div>
+</body>
+
+<footer>
+  <p>Copyright &copy; 2020 |All-Right Reserved| Design by Bibek Pradhan</p>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100007595446109"><img src="../images/fb.png" width="35px" height="35px"></a>
+    <a href="https://www.instagram.com/thebibekpradhan10/"><img src="../images/insta.png" width="35px" height="35px"></a>
+    <a href="https://twitter.com/BibekPr90229443"><img src="../images/twitter.jpg" width="35px" height="35px"></a>
+    <a href="https://web.whatsapp.com/"><img src="../images/whatsapp.jpg" width="35px" height="35px"></a>
+  </div>
+</footer>
+</html>
